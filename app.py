@@ -96,7 +96,7 @@ else:
 # ---------------------------------------------------------
 if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
 
-    # RAMA 1: MODO SIMULADO / OFFLINE (Base consolidada de 21 candidatos)
+    # RAMA 1: MODO SIMULADO / OFFLINE (Base consolidada de 55 candidatos)
     if modo_demo:
         resultados_precargados = [
             {
@@ -114,11 +114,25 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "archivo": "CV_Valentino_de_la_Plaza_ATS.pdf"
             },
             {
+                "nombre_candidato": "Mariana Rivas",
+                "puntaje_compatibilidad": 95,
+                "cumple_excluyentes": True,
+                "veredicto": "Avanzar a entrevista",
+                "resumen_perfil": "Asistente ejecutiva bilingüe (C2) con más de 7 años asistiendo a directores y gerencias. Sólida experiencia en organización administrativa, rendición de gastos, minutas, gestión de compras de servicios y soporte operativo integral.",
+                "puntos_fuertes": [
+                    "Inglés bilingüe C2 acreditado para trato corporativo",
+                    "Amplia experiencia en soporte ejecutivo, rendición de gastos y compras",
+                    "Dominio avanzado de Google Workspace, Microsoft 365 y ERPs"
+                ],
+                "requisitos_faltantes": ["Estudios orientados a Relaciones Institucionales y no estrictamente a Ciencias Económicas."],
+                "archivo": "cv_26_asistente_ejecutiva.pdf"
+            },
+            {
                 "nombre_candidato": "Patricia Mónica Figari",
                 "puntaje_compatibilidad": 94,
                 "cumple_excluyentes": True,
                 "veredicto": "Avanzar a entrevista",
-                "resumen_perfil": "Estudiante avanzada de Contador Público (UBA - 26 materias aprobadas) con más de 15 años de experiencia liderando cuentas a pagar, gestión de proveedores, cobranzas y conciliaciones contables. Cuenta con manejo de Bejerman, Tango, BAS y nociones de IA aplicada.",
+                "resumen_perfil": "Estudiante avanzada de Contador Público (UBA - 26 materias aprobadas) con más de 15 años de experiencia liderando cuentas a pagar, gestión de proveedores, cobranzas y conciliaciones contables. Cuenta con manejo de Bejerman, Tango y BAS.",
                 "puntos_fuertes": [
                     "Formación universitaria en Ciencias Económicas (UBA)",
                     "Dominio integral de cuentas a pagar, compras a proveedores y cobranzas",
@@ -128,62 +142,149 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "archivo": "Patricia Mónica Figari 05 2026 CV.pdf"
             },
             {
+                "nombre_candidato": "Mariana Silva",
+                "puntaje_compatibilidad": 93,
+                "cumple_excluyentes": True,
+                "veredicto": "Avanzar a entrevista",
+                "resumen_perfil": "Licenciada en Administración con más de 5 años gestionando compras productivas e indirectas, negociación con proveedores, emisión de órdenes de compra en SAP MM y análisis exhaustivo de costos.",
+                "puntos_fuertes": [
+                    "Título universitario en Administración (UADE)",
+                    "Especialista en compras corporativas, licitaciones y gestión de proveedores",
+                    "Manejo avanzado de SAP MM, Excel y herramientas de abastecimiento"
+                ],
+                "requisitos_faltantes": ["Perfil fuertemente enfocado en compras; requerirá inducción en tareas directas de cobranzas."],
+                "archivo": "cv_12_comprador_procurement.pdf"
+            },
+            {
                 "nombre_candidato": "Vanina Giselle Herrera",
                 "puntaje_compatibilidad": 92,
                 "cumple_excluyentes": True,
                 "veredicto": "Avanzar a entrevista",
-                "resumen_perfil": "Estudiante universitaria en la UBA (Lic. en Relaciones del Trabajo) con inglés intermedio certificado[cite: 15]. Cuenta con amplia trayectoria en compras de insumos, pago a proveedores, gestión de cobranzas, trámites bancarios y armado de cash flow[cite: 15].",
+                "resumen_perfil": "Estudiante universitaria en la UBA (Lic. en Relaciones del Trabajo) con inglés intermedio certificado. Amplia trayectoria en compras de insumos, pago a proveedores, gestión de cobranzas, trámites bancarios y cash flow.",
                 "puntos_fuertes": [
-                    "Carrera universitaria afín en curso en UBA y diplomatura[cite: 15]",
-                    "Experiencia comprobada en cobranzas, proveedores, facturación y bancos[cite: 15]",
-                    "Nivel de inglés intermedio (Oxford University English Course)[cite: 15]"
+                    "Carrera universitaria afín en curso en UBA y diplomatura",
+                    "Experiencia comprobada en cobranzas, proveedores, facturación y bancos",
+                    "Nivel de inglés intermedio (Oxford University English Course)"
                 ],
                 "requisitos_faltantes": ["Mayor profundización en herramientas de IA generativa."],
                 "archivo": "Cv Vanina Herrera.pdf"
+            },
+            {
+                "nombre_candidato": "Mariana Sofía Rossi",
+                "puntaje_compatibilidad": 91,
+                "cumple_excluyentes": True,
+                "veredicto": "Avanzar a entrevista",
+                "resumen_perfil": "Técnica Superior en Administración con más de 5 años en facturación masiva ARCA, cuentas corrientes, proveedores, conciliaciones bancarias y ERP Tango. Sólida experiencia contable y manejo fluido de Excel.",
+                "puntos_fuertes": [
+                    "Formación técnica acreditada en Administración General",
+                    "Experiencia en facturación masiva ARCA, cuentas corrientes y proveedores",
+                    "Dominio de sistemas de gestión (Tango Gestión y Bejerman)"
+                ],
+                "requisitos_faltantes": ["No posee certificación de nivel de inglés intermedio formal."],
+                "archivo": "CV_Mariana_Rossi_Administrativa.pdf"
+            },
+            {
+                "nombre_candidato": "Esteban Castro",
+                "puntaje_compatibilidad": 90,
+                "cumple_excluyentes": True,
+                "veredicto": "Avanzar a entrevista",
+                "resumen_perfil": "Contador Público Nacional con más de 6 años en administración de personal, liquidación salarial, Libro Sueldos Digital AFIP, conciliaciones bancarias y manejo avanzado de sistemas ERP (Tango Sueldos, SAP).",
+                "puntos_fuertes": [
+                    "Título universitario de Contador Público (UNLZ)",
+                    "Dominio profundo de normativa contable, impositiva (AFIP) y convenios colectivos",
+                    "Manejo de sistemas Tango, SAP y conciliaciones complejas"
+                ],
+                "requisitos_faltantes": ["Nivel de inglés técnico básico."],
+                "archivo": "cv_09_hard_hr_payroll.pdf"
+            },
+            {
+                "nombre_candidato": "Florencia Herrera",
+                "puntaje_compatibilidad": 89,
+                "cumple_excluyentes": True,
+                "veredicto": "Avanzar a entrevista",
+                "resumen_perfil": "Licenciada en Economía (UTDT) con 5 años en análisis financiero, cash flow proyectado, control presupuestario y manejo de SAP S/4HANA. Cuenta con inglés bilingüe (C1) y dominio avanzado de Excel.",
+                "puntos_fuertes": [
+                    "Formación universitaria de grado en Ciencias Económicas (Lic. en Economía)",
+                    "Inglés avanzado bilingüe C1 y modelado financiero en Excel/Power BI",
+                    "Dominio de ERP SAP S/4HANA y conciliación presupuestaria"
+                ],
+                "requisitos_faltantes": ["Perfil orientado a análisis estratégico financiero más que a trámites operativos."],
+                "archivo": "cv_04_analista_fpa.pdf"
             },
             {
                 "nombre_candidato": "Evelyn Gisela Maturano",
                 "puntaje_compatibilidad": 88,
                 "cumple_excluyentes": False,
                 "veredicto": "Avanzar a entrevista",
-                "resumen_perfil": "Sólido perfil administrativo-financiero con experiencia en compras estratégicas, proveedores, cobranzas complejas (aging), conciliaciones y módulo MIRO de SAP[cite: 17]. Posee inglés intermedio[cite: 17] y bachiller comercial[cite: 17], aunque su carrera universitaria actual es en Artes Visuales[cite: 17].",
+                "resumen_perfil": "Sólido perfil administrativo-financiero con experiencia en compras estratégicas, proveedores, cobranzas complejas (aging), conciliaciones y módulo MIRO de SAP. Posee inglés intermedio certificado.",
                 "puntos_fuertes": [
-                    "Amplio dominio de SAP, Tango, Catedral y Excel avanzado[cite: 17]",
-                    "Gestión integral de compras, cuentas corrientes, pagos y cobranzas[cite: 17]",
-                    "Inglés intermedio certificado y cursos impositivos en la UBA[cite: 17]"
+                    "Amplio dominio de SAP, Tango, Catedral y Excel avanzado",
+                    "Gestión integral de compras, cuentas corrientes, pagos y cobranzas",
+                    "Inglés intermedio certificado y cursos impositivos en la UBA"
                 ],
-                "requisitos_faltantes": ["No cursa actualmente carrera de grado en Ciencias Económicas[cite: 17]."],
+                "requisitos_faltantes": ["No cursa actualmente carrera de grado en Ciencias Económicas."],
                 "archivo": "CV_Evelyn_Maturano (2).pdf"
+            },
+            {
+                "nombre_candidato": "Valeria Giménez",
+                "puntaje_compatibilidad": 87,
+                "cumple_excluyentes": True,
+                "veredicto": "Avanzar a entrevista",
+                "resumen_perfil": "Licenciada en Finanzas con 5 años evaluando riesgo crediticio, gestión de cobranzas de cuentas en mora, análisis de estados contables de PyMEs y seguimiento de flujos de caja en instituciones financieras.",
+                "puntos_fuertes": [
+                    "Grado universitario en Finanzas (UADE)",
+                    "Sólida experiencia en cobranzas, análisis crediticio y solvencia de clientes",
+                    "Inglés intermedio B2 y manejo avanzado de Excel y herramientas contables"
+                ],
+                "requisitos_faltantes": ["Experiencia en compras operativas menor que en cobranzas y análisis financiero."],
+                "archivo": "cv_18_analista_riesgo_credito.pdf"
             },
             {
                 "nombre_candidato": "Juan Manuel Mansilla",
                 "puntaje_compatibilidad": 84,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Administrativo generalista con 9 años de experiencia en Pymes, destacándose en compras operativas, gestión de proveedores, conciliación de facturación con ERP y cobranzas[cite: 14]. Bachiller en Economía pero sin carrera de grado en curso ni inglés certificado[cite: 14].",
+                "resumen_perfil": "Administrativo generalista con 9 años de experiencia en Pymes, destacándose en compras operativas, gestión de proveedores, conciliación de facturación con ERP y cobranzas.",
                 "puntos_fuertes": [
-                    "Especialista en compras Pyme, proveedores y conciliación documental[cite: 14]",
-                    "Manejo de sistemas ERP, facturación ARCA y arqueos de caja[cite: 14]",
-                    "Bachiller en Economía y Administración[cite: 14]"
+                    "Especialista en compras Pyme, proveedores y conciliación documental",
+                    "Manejo de sistemas ERP, facturación ARCA y arqueos de caja",
+                    "Bachiller en Economía y Administración"
                 ],
                 "requisitos_faltantes": [
-                    "No cursa carrera de grado en Ciencias Económicas[cite: 14]",
-                    "Sin acreditación de nivel de inglés intermedio[cite: 14]"
+                    "No cursa carrera de grado en Ciencias Económicas",
+                    "Sin acreditación de nivel de inglés intermedio"
                 ],
                 "archivo": "CV Juan Manuel Mansilla - Adm.pdf"
+            },
+            {
+                "nombre_candidato": "Lucas Gabriel Medina",
+                "puntaje_compatibilidad": 83,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Técnico en RRHH con 4 años en control de ausentismo, novedades de liquidación, legajos y contacto con ART. Perfil administrativo orientado a gestión de personal y trámites.",
+                "puntos_fuertes": [
+                    "Experiencia en control de novedades y administración de personal",
+                    "Manejo de sistemas de fichaje y plataformas oficiales (ARCA/ART)",
+                    "Tecnicatura Superior en Recursos Humanos finalizada"
+                ],
+                "requisitos_faltantes": [
+                    "Experiencia orientada a personal y no a compras comerciales o cobranzas",
+                    "Nivel de inglés básico"
+                ],
+                "archivo": "CV_Lucas_Medina_AdmRRHH.pdf"
             },
             {
                 "nombre_candidato": "Esteban Benitez",
                 "puntaje_compatibilidad": 82,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Experiencia destacada en cobranzas, tesorería, control de recaudación y cuentas corrientes en retail[cite: 10]. Posee manejo avanzado de Excel (confección de Cash Flow) e inglés en curso (Nivel 4)[cite: 10], con secundario contable pero sin estudios universitarios[cite: 10].",
+                "resumen_perfil": "Experiencia destacada en cobranzas, tesorería, control de recaudación y cuentas corrientes en retail. Manejo avanzado de Excel aplicado a Cash Flow con secundario contable.",
                 "puntos_fuertes": [
-                    "Dominio de cobranzas, medios de pago y tesorería[cite: 10]",
-                    "Excel avanzado aplicado a Cash Flow y conciliaciones[cite: 10]",
-                    "Inglés en curso en Liceo Cultural Británico[cite: 10]"
+                    "Dominio de cobranzas, medios de pago y tesorería",
+                    "Excel avanzado aplicado a Cash Flow y conciliaciones",
+                    "Inglés en curso en Liceo Cultural Británico"
                 ],
-                "requisitos_faltantes": ["Sin formación universitaria en curso en Ciencias Económicas[cite: 10]."],
+                "requisitos_faltantes": ["Sin formación universitaria en curso en Ciencias Económicas."],
                 "archivo": "CV BENITEZ ESTEBAN.pdf"
             },
             {
@@ -191,7 +292,7 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "puntaje_compatibilidad": 80,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Administrativa con 6 años de experiencia en soporte contable, ventas mayoristas, seguimiento de cuentas corrientes, facturación, echeq y conciliaciones bancarias. Manejo de SAP, Tango e inglés intermedio, pero sin carrera universitaria en Cs. Económicas.",
+                "resumen_perfil": "Administrativa con 6 años de experiencia en soporte contable, ventas mayoristas, seguimiento de cuentas corrientes, facturación, echeq y conciliaciones bancarias en SAP y Tango.",
                 "puntos_fuertes": [
                     "Manejo de sistemas de gestión (SAP, Tango) y Excel",
                     "Experiencia en conciliaciones bancarias, cuentas corrientes y facturación",
@@ -201,19 +302,33 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "archivo": "CVCarla_Agostina_Antognoli.pdf"
             },
             {
+                "nombre_candidato": "Julieta Díaz",
+                "puntaje_compatibilidad": 79,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Licenciada en Comercio Internacional con 5 años coordinando compras y logística de importación, control de documentación comercial, facturación y pagos bancarios al exterior con inglés C1.",
+                "puntos_fuertes": [
+                    "Experiencia en gestión documental de compras internacionales y proveedores",
+                    "Nivel de inglés avanzado bilingüe (C1)",
+                    "Manejo de SAP y trámites bancarios/comerciales"
+                ],
+                "requisitos_faltantes": ["Especialización en comercio exterior; requerirá adaptación al circuito administrativo local."],
+                "archivo": "cv_10_comercio_exterior.pdf"
+            },
+            {
                 "nombre_candidato": "Bárbara Hipler",
                 "puntaje_compatibilidad": 78,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Graduada en Secretariado Administrativo y Perito Mercantil con orientación contable[cite: 9]. Cuenta con amplia experiencia en atención a proveedores, compras de insumos, facturación, trámites bancarios y manejo de caja chica[cite: 9].",
+                "resumen_perfil": "Graduada en Secretariado Administrativo y Perito Mercantil con orientación contable. Experiencia en compras de insumos, pago a proveedores, facturación y caja chica.",
                 "puntos_fuertes": [
-                    "Formación específica en Secretariado Administrativo y Perito Mercantil[cite: 9]",
-                    "Experiencia operativa en compras de insumos y pago a proveedores[cite: 9]",
-                    "Manejo de caja chica, trámites bancarios y facturación[cite: 9]"
+                    "Formación específica en Secretariado Administrativo y Perito Mercantil",
+                    "Experiencia operativa en compras de insumos y pago a proveedores",
+                    "Manejo de caja chica, trámites bancarios y facturación"
                 ],
                 "requisitos_faltantes": [
                     "Sin carrera de grado universitaria en Ciencias Económicas",
-                    "Nivel de inglés sin certificación intermedia[cite: 9]"
+                    "Nivel de inglés sin certificación intermedia"
                 ],
                 "archivo": "CV Bárbara Hipler.pdf"
             },
@@ -222,15 +337,13 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "puntaje_compatibilidad": 76,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Profesional con más de 6 años de experiencia en gestión documental, compras de insumos, control de stock y cobranzas corporativas[cite: 8]. Manejo de sistemas integrados e inglés intermedio[cite: 8], con formación universitaria en Higiene y Seguridad del Trabajo[cite: 8].",
+                "resumen_perfil": "Profesional con más de 6 años de experiencia en gestión documental, compras de insumos, control de stock y cobranzas corporativas con inglés intermedio.",
                 "puntos_fuertes": [
-                    "Experiencia sólida en compras de insumos, stock y cobranzas comerciales[cite: 8]",
-                    "Gestión documental, auditorías y sistemas integrados de gestión[cite: 8]",
-                    "Nivel de inglés intermedio acreditado[cite: 8]"
+                    "Experiencia sólida en compras de insumos, stock y cobranzas comerciales",
+                    "Gestión documental, auditorías y sistemas integrados de gestión",
+                    "Nivel de inglés intermedio acreditado"
                 ],
-                "requisitos_faltantes": [
-                    "Formación universitaria orientada a Higiene y Seguridad, no a Ciencias Económicas[cite: 8]"
-                ],
+                "requisitos_faltantes": ["Formación universitaria orientada a Higiene y Seguridad, no a Ciencias Económicas."],
                 "archivo": "CV Antonella Falsetti.pdf"
             },
             {
@@ -238,9 +351,9 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "puntaje_compatibilidad": 75,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Asistente administrativa bilingüe certificada (First Certificate in English). Cuenta con sólida experiencia en reclamo de cobranzas, gestión de cuentas corrientes, facturación y data entry en sistemas de gestión, aunque con perfil formativo en Comunicación Social.",
+                "resumen_perfil": "Asistente administrativa bilingüe certificada (First Certificate in English). Experiencia en reclamo de cobranzas, gestión de cuentas corrientes, facturación y data entry.",
                 "puntos_fuertes": [
-                    "Certificación First Certificate in English (FCE) e idiomas adicionales",
+                    "Certificación First Certificate in English (FCE)",
                     "Experiencia en gestión comercial de cuentas corrientes y cobranzas",
                     "Habilidades destacadas en redacción corporativa y precisión en carga de datos"
                 ],
@@ -248,18 +361,63 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "archivo": "María Cecilia Martín CV.pdf"
             },
             {
+                "nombre_candidato": "Santiago Rossi",
+                "puntaje_compatibilidad": 74,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Licenciado en Sistemas de Información de las Organizaciones (FCE-UBA) con experiencia en automatización de reportes, conciliación de datos en SQL y tableros en Power BI. Inglés C1.",
+                "puntos_fuertes": [
+                    "Egresado de la Facultad de Ciencias Económicas (FCE - UBA)",
+                    "Nivel de inglés profesional avanzado (C1)",
+                    "Capacidad analítica para procesamiento de datos, Excel y conciliaciones"
+                ],
+                "requisitos_faltantes": ["Perfil enfocado en Business Intelligence y analítica de datos, no en tareas operativas de oficina."],
+                "archivo": "cv_05_data_analyst.pdf"
+            },
+            {
+                "nombre_candidato": "Maximiliano Prado",
+                "puntaje_compatibilidad": 72,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Encargado comercial con más de 6 años liderando sucursales de retail. Amplia práctica en arqueos de caja, facturación electrónica A/B, control de inventarios y rendición de valores.",
+                "puntos_fuertes": [
+                    "Dominio de arqueo de caja, facturación electrónica y medios de pago",
+                    "Control riguroso de inventarios y rendición de caudales",
+                    "Tecnicatura Universitaria en Gestión Retail (UNSAM)"
+                ],
+                "requisitos_faltantes": [
+                    "Experiencia orientada al salón de ventas comercial y no a la administración corporativa",
+                    "Nivel de inglés básico"
+                ],
+                "archivo": "cv_28_encargado_retail.pdf"
+            },
+            {
+                "nombre_candidato": "Melina Vega",
+                "puntaje_compatibilidad": 71,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Especialista en atención al cliente y soporte administrativo bilingüe (C2). Experiencia en gestión de tickets, facturación básica, gestión documental y cumplimiento de SLAs corporativos.",
+                "puntos_fuertes": [
+                    "Dominio bilingüe nativo de inglés (C2) y traducción",
+                    "Gestión documental, seguimiento de requerimientos y atención corporativa",
+                    "Manejo de sistemas CRM y plataformas digitales"
+                ],
+                "requisitos_faltantes": ["Sin formación en Ciencias Económicas ni experiencia contable."],
+                "archivo": "cv_22_soporte_bilingue.pdf"
+            },
+            {
                 "nombre_candidato": "Georgina Melisa Laterza",
                 "puntaje_compatibilidad": 70,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Bachiller contable con trayectoria en facturación, notas de crédito, remitos, compras y conciliación de caja en empresas comerciales[cite: 13]. Manejo fluido de herramientas de Office y portales comerciales, sin estudios universitarios finalizados ni inglés certificado[cite: 13].",
+                "resumen_perfil": "Bachiller contable con trayectoria en facturación, notas de crédito, remitos, compras y conciliación de caja en empresas comerciales. Manejo de Office y sistemas comerciales.",
                 "puntos_fuertes": [
-                    "Experiencia en circuitos de facturación, remitos y control de stock[cite: 13]",
-                    "Manejo de herramientas de Office y sistemas de gestión comercial[cite: 13]",
-                    "Título secundario con orientación contable[cite: 13]"
+                    "Experiencia en circuitos de facturación, remitos y control de stock",
+                    "Manejo de herramientas de Office y sistemas de gestión comercial",
+                    "Título secundario con orientación contable"
                 ],
                 "requisitos_faltantes": [
-                    "Sin carrera universitaria en Ciencias Económicas[cite: 13]",
+                    "Sin carrera universitaria en Ciencias Económicas",
                     "Sin manejo comprobable de idioma inglés"
                 ],
                 "archivo": "CV Georgina Laterza.pdf"
@@ -269,24 +427,97 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "puntaje_compatibilidad": 68,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Más de 18 años en administración y soporte operativo en instituciones públicas y de salud[cite: 7]. Experiencia en expedientes, cotizaciones con proveedores, libros banco y liquidación de sueldos[cite: 7]. Posee formación docente y carece de inglés intermedio[cite: 7].",
+                "resumen_perfil": "Más de 18 años en administración y soporte operativo en instituciones públicas y de salud. Experiencia en expedientes, cotizaciones con proveedores, libros banco y liquidación.",
                 "puntos_fuertes": [
-                    "Amplia experiencia en control de caja, bancos y rendiciones[cite: 7]",
-                    "Trato y seguimiento de cotizaciones con proveedores[cite: 7]",
-                    "Manejo de sistemas de expedientes y documentación oficial[cite: 7]"
+                    "Amplia experiencia en control de caja, bancos y rendiciones",
+                    "Trato y seguimiento de cotizaciones con proveedores",
+                    "Manejo de sistemas de expedientes y documentación oficial"
                 ],
                 "requisitos_faltantes": [
-                    "Sin formación universitaria en Ciencias Económicas[cite: 7]",
-                    "No posee nivel de inglés intermedio (cuenta con portugués básico)[cite: 7]"
+                    "Sin formación universitaria en Ciencias Económicas",
+                    "No posee nivel de inglés intermedio"
                 ],
                 "archivo": "CV - María Magdalena Jerez V2.pdf"
+            },
+            {
+                "nombre_candidato": "Diego Ferrari",
+                "puntaje_compatibilidad": 67,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Licenciado en Comercialización (UADE) con experiencia en Trade Marketing, control presupuestario de promociones, análisis comercial de sell-in/sell-out y manejo de SAP SD.",
+                "puntos_fuertes": [
+                    "Título universitario afín en Comercialización (UADE)",
+                    "Control y seguimiento presupuestario en Excel y SAP SD",
+                    "Capacidad analítica para reportes comerciales"
+                ],
+                "requisitos_faltantes": ["Perfil volcado a marketing y canales comerciales; no a tareas administrativas contables de compras/cobros."],
+                "archivo": "cv_23_trade_marketing.pdf"
+            },
+            {
+                "nombre_candidato": "Sofía Navarro",
+                "puntaje_compatibilidad": 66,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Licenciada en Relaciones Públicas con experiencia en Customer Success B2B, seguimiento de contratos SaaS, gestión de clientes corporativos y retención con inglés bilingüe C2.",
+                "puntos_fuertes": [
+                    "Inglés bilingüe C2 y comunicación institucional de alto nivel",
+                    "Seguimiento de cuentas corporativas y acuerdos de renovación",
+                    "Manejo de plataformas CRM y reportes ejecutivos"
+                ],
+                "requisitos_faltantes": ["Sin formación en Ciencias Económicas ni experiencia en cobranzas morosas o compras contables."],
+                "archivo": "cv_08_customer_success.pdf"
+            },
+            {
+                "nombre_candidato": "Agustín Romero",
+                "puntaje_compatibilidad": 65,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Licenciado en Comercialización con más de 5 años en ventas B2B corporativas, negociación de contratos marco de alto valor y uso diario de CRMs con inglés C1.",
+                "puntos_fuertes": [
+                    "Grado universitario y nivel de inglés avanzado C1",
+                    "Capacidad de negociación contractual y trato formal con clientes",
+                    "Manejo de sistemas comerciales y pipeline de operaciones"
+                ],
+                "requisitos_faltantes": ["Perfil netamente comercial y de ventas, sin experiencia en circuitos administrativos ni compras internas."],
+                "archivo": "cv_01_ejecutivo_cuentas_b2b.pdf"
+            },
+            {
+                "nombre_candidato": "Camila Benítez",
+                "puntaje_compatibilidad": 64,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Licenciada en Recursos Humanos (UBA) con experiencia en selección técnica, relevamiento de perfiles, negociación de propuestas laborales y gestión documental con inglés C2.",
+                "puntos_fuertes": [
+                    "Título universitario de grado de la UBA",
+                    "Nivel de inglés bilingüe C2",
+                    "Capacidad organizativa, seguimiento de procesos y entrevistas"
+                ],
+                "requisitos_faltantes": ["Experiencia orientada exclusivamente a selección de talento IT; sin experiencia contable ni de compras."],
+                "archivo": "cv_02_it_recruiter.pdf"
+            },
+            {
+                "nombre_candidato": "Gonzalo Martín Varela",
+                "puntaje_compatibilidad": 62,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Abogado egresado de la UBA especializado en litigios laborales y contratos comerciales. Posee inglés C1 y matrícula CPACF, pero su perfil excede las tareas de asistencia operativa básica.",
+                "puntos_fuertes": [
+                    "Título de grado universitario de la Universidad de Buenos Aires (UBA)",
+                    "Nivel de inglés avanzado bilingüe (C1)",
+                    "Capacidad de redacción formal, análisis contractual y negociación"
+                ],
+                "requisitos_faltantes": [
+                    "Formación jurídica y no en Ciencias Económicas/Administración",
+                    "Perfil sobrecalificado para un rol operativo de asistencia administrativa"
+                ],
+                "archivo": "CV_Gonzalo_Varela_Abogado.pdf"
             },
             {
                 "nombre_candidato": "Fabiana Marcela Serrano",
                 "puntaje_compatibilidad": 60,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Amplia experiencia como administrativa y procuradora en el área legal y crediticia. Manejo de cobranzas multicanal, legajos de crédito y trámites bancarios, con experiencia previa en compras para catering. No cuenta con inglés intermedio ni carrera afín.",
+                "resumen_perfil": "Amplia experiencia como administrativa y procuradora en el área legal y crediticia. Manejo de cobranzas multicanal, legajos de crédito y trámites bancarios.",
                 "puntos_fuertes": [
                     "Sólida experiencia en cobranzas multicanal y seguimiento de deudas",
                     "Manejo de cajas, conciliaciones y cuentas corrientes",
@@ -299,63 +530,190 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "archivo": "Fabiana Marcela Serrano CV.pdf"
             },
             {
+                "nombre_candidato": "Dr. Gonzalo Carrizo",
+                "puntaje_compatibilidad": 58,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Abogado egresado de la UBA especialista en Compliance, prevención de lavado (AML) y debida diligencia de contrapartes (KYC) con matrícula CPACF e inglés C1.",
+                "puntos_fuertes": [
+                    "Formación universitaria de grado en Derecho (UBA) e inglés C1",
+                    "Rigor en auditoría documental, debida diligencia y normativas oficiales",
+                    "Capacidad analítica para cumplimiento regulatorio"
+                ],
+                "requisitos_faltantes": ["Enfoque estrictamente jurídico/penal económico; sobrecalificado para asistencia administrativa."],
+                "archivo": "cv_27_abogado_compliance.pdf"
+            },
+            {
                 "nombre_candidato": "Juan Ignacio Pérez",
                 "puntaje_compatibilidad": 55,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Desarrollador backend orientado a programación en Python y FastAPI. Si bien posee inglés B2, su formación está orientada exclusivamente a tecnología y no a tareas administrativas o contables.",
+                "resumen_perfil": "Desarrollador backend orientado a programación en Python y FastAPI. Si bien posee inglés B2, su formación está orientada exclusivamente a tecnología y no a tareas administrativas.",
                 "puntos_fuertes": ["Nivel de inglés técnico B2", "Capacidad lógica y resolución estructurada"],
                 "requisitos_faltantes": ["Sin formación en Ciencias Económicas ni experiencia en cobranzas o compras."],
                 "archivo": "CV_Juan_Perez_Backend.pdf"
+            },
+            {
+                "nombre_candidato": "Facundo Morales",
+                "puntaje_compatibilidad": 50,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Licenciado en Sistemas (UTN) y Project Manager certificado (PMP). Experiencia liderando proyectos de software, gestión de presupuestos y ceremonias ágiles con inglés C1.",
+                "puntos_fuertes": [
+                    "Control presupuestario y seguimiento de cronogramas en Confluence/Jira",
+                    "Nivel de inglés avanzado profesional (C1)",
+                    "Habilidades organizativas y coordinación de equipos"
+                ],
+                "requisitos_faltantes": ["Perfil tecnológico sénior; sobrecalificado y desalineado del rol operativo administrativo."],
+                "archivo": "cv_16_project_manager.pdf"
+            },
+            {
+                "nombre_candidato": "Federico Luna",
+                "puntaje_compatibilidad": 48,
+                "cumple_excluyentes": False,
+                "veredicto": "En reserva",
+                "resumen_perfil": "Licenciado en Ciencias de la Educación (UdeSA) especializado en capacitación corporativa, diseño instruccional y administración de plataformas LMS con inglés C1.",
+                "puntos_fuertes": [
+                    "Título universitario de grado e inglés avanzado C1",
+                    "Capacidad pedagógica y elaboración de materiales corporativos",
+                    "Manejo de herramientas informáticas y plataformas formativas"
+                ],
+                "requisitos_faltantes": ["Sin experiencia en facturación, cobranzas o compras contables."],
+                "archivo": "cv_15_capacitador_corporativo.pdf"
             },
             {
                 "nombre_candidato": "Cristian de la Plaza",
                 "puntaje_compatibilidad": 45,
                 "cumple_excluyentes": False,
                 "veredicto": "En reserva",
-                "resumen_perfil": "Perfil senior con más de 20 años de experiencia en logística, control de stock mediante SAP y gestión de remitos[cite: 1, 2]. Posee título de Perito Mercantil y movilidad propia[cite: 4, 5], aunque su trayectoria se concentra en operaciones de planta y autoelevadores[cite: 1, 3].",
+                "resumen_perfil": "Perfil senior con más de 20 años de experiencia en logística, control de stock mediante SAP y remitos. Posee título de Perito Mercantil y movilidad propia.",
                 "puntos_fuertes": [
-                    "Más de dos décadas en control de inventarios, remitos y trazabilidad logística[cite: 1, 2]",
-                    "Manejo de SAP y herramientas ofimáticas (Word, Excel, Outlook)[cite: 1, 4]",
-                    "Disponibilidad horaria, carnet de conducir y vehículo propio[cite: 5]"
+                    "Más de dos décadas en control de inventarios, remitos y trazabilidad logística",
+                    "Manejo de SAP y herramientas ofimáticas (Word, Excel, Outlook)",
+                    "Disponibilidad horaria, carnet de conducir y vehículo propio"
                 ],
                 "requisitos_faltantes": [
                     "No cursa carrera universitaria en Ciencias Económicas o Administración",
-                    "Experiencia orientada a depósito/logística pesada y no a compras o conciliaciones contables[cite: 1, 2]"
+                    "Experiencia orientada a depósito/logística pesada y no a compras o conciliaciones"
                 ],
                 "archivo": "CV Cristian.docx.pdf"
+            },
+            {
+                "nombre_candidato": "Martín Morales",
+                "puntaje_compatibilidad": 40,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Licenciado en Marketing con experiencia en Growth y Paid Media (Google Ads, Meta Ads). Enfoque exclusivo en pauta digital, embudos y analítica web.",
+                "puntos_fuertes": [
+                    "Grado universitario completo",
+                    "Análisis cuantitativo de métricas de retorno (ROAS)",
+                    "Inglés profesional B2+"
+                ],
+                "requisitos_faltantes": [
+                    "Sin relación con tareas administrativas contables, compras ni cobranzas",
+                    "Perfil técnico orientado a adquisición digital"
+                ],
+                "archivo": "cv_03_growth_marketer.pdf"
+            },
+            {
+                "nombre_candidato": "Ing. Matías Duarte",
+                "puntaje_compatibilidad": 38,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Ingeniero Industrial (UTN) con especialización en Lean Manufacturing, balanceo de líneas productivas y tiempos y métodos en plantas fabriles automotrices.",
+                "puntos_fuertes": [
+                    "Graduado en Ingeniería Industrial con nivel de inglés C1",
+                    "Manejo de metodologías de mejora continua y control estadístico",
+                    "Manejo de SAP PP y análisis cuantitativo"
+                ],
+                "requisitos_faltantes": [
+                    "Perfil orientado estrictamente a planta fabril y manufactura",
+                    "Sin afinidad con funciones de secretaría o administración de compras/cobros"
+                ],
+                "archivo": "cv_21_ingeniero_industrial.pdf"
             },
             {
                 "nombre_candidato": "Alan Yamil Ilarraz",
                 "puntaje_compatibilidad": 35,
                 "cumple_excluyentes": False,
                 "veredicto": "Descartar",
-                "resumen_perfil": "Operario logístico con experiencia en depósito, picking, control de remitos y manejo de caja en comercio minorista[cite: 16]. Tuvo inicio en la Licenciatura en Administración (UNGS, pausada) y cuenta con inglés básico[cite: 16].",
+                "resumen_perfil": "Operario logístico con experiencia en depósito, picking, control de remitos y manejo de caja. Carrera universitaria en administración actualmente pausada.",
                 "puntos_fuertes": [
-                    "Manejo de stock, control de remitos y recepción de mercadería[cite: 16]",
-                    "Experiencia en cobranzas y atención al cliente en comercio[cite: 16]",
-                    "Secundario completo y cursos de herramientas digitales[cite: 16]"
+                    "Manejo de stock, control de remitos y recepción de mercadería",
+                    "Experiencia en cobranzas y atención al cliente en comercio",
+                    "Secundario completo y cursos de herramientas digitales"
                 ],
                 "requisitos_faltantes": [
-                    "Carrera universitaria en administración actualmente pausada[cite: 16]",
-                    "Inglés en nivel básico[cite: 16]",
-                    "Experiencia predominantemente operativa de depósito[cite: 16]"
+                    "Carrera universitaria en administración actualmente pausada",
+                    "Inglés en nivel básico",
+                    "Experiencia predominantemente operativa de depósito"
                 ],
                 "archivo": "CV_Alan_Yamil_Ilarraz_Perfecto.pdf"
+            },
+            {
+                "nombre_candidato": "Camila Sosa",
+                "puntaje_compatibilidad": 32,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Licenciada en Comunicación Social especializada en Social Media, producción audiovisual para TikTok/Reels y gestión de influencers. Sin experiencia administrativa.",
+                "puntos_fuertes": [
+                    "Título universitario en Comunicación",
+                    "Inglés intermedio B2 y redacción creativa",
+                    "Manejo de herramientas audiovisuales y redes sociales"
+                ],
+                "requisitos_faltantes": [
+                    "Sin conocimientos de contabilidad, proveedores, cobranzas ni facturación",
+                    "Perfil puramente enfocado a redes sociales y contenido"
+                ],
+                "archivo": "cv_19_community_manager.pdf"
+            },
+            {
+                "nombre_candidato": "Gonzalo Torres",
+                "puntaje_compatibilidad": 30,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Licenciado en Seguridad e Higiene Laboral (HSE) con experiencia en plantas químicas, protocolos de bioseguridad, auditorías ISO y permisos de trabajo en campo.",
+                "puntos_fuertes": [
+                    "Título universitario de grado y matrícula COPIME",
+                    "Rigurosidad técnica en normativas y procedimientos operativos",
+                    "Liderazgo operativo en prevención de riesgos"
+                ],
+                "requisitos_faltantes": [
+                    "Especialidad técnico-ambiental ajena al área administrativa",
+                    "Sin conocimientos contables ni de compras comerciales"
+                ],
+                "archivo": "cv_13_seguridad_higiene.pdf"
+            },
+            {
+                "nombre_candidato": "Matías Albornoz",
+                "puntaje_compatibilidad": 28,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Licenciado en Publicidad con 5 años de trayectoria como redactor creativo publicitario y guionista de comerciales. Sin antecedentes en tareas de oficina administrativa.",
+                "puntos_fuertes": [
+                    "Excelente redacción y dominio de storytelling",
+                    "Inglés avanzado C1 y conceptualización estratégica de marcas",
+                    "Grado universitario en Publicidad"
+                ],
+                "requisitos_faltantes": [
+                    "Sin experiencia contable, financiera ni de compras corporativas",
+                    "Perfil puramente creativo y publicitario"
+                ],
+                "archivo": "cv_30_copywriter_creativo.pdf"
             },
             {
                 "nombre_candidato": "Fátima Soledad Sánchez",
                 "puntaje_compatibilidad": 25,
                 "cumple_excluyentes": False,
                 "veredicto": "Descartar",
-                "resumen_perfil": "Recepcionista en centros de salud con tareas de atención al paciente, turnos, caja y recepción de insumos[cite: 11]. Sin formación contable/administrativa formal ni conocimientos de idioma inglés[cite: 11].",
+                "resumen_perfil": "Recepcionista en centros de salud con tareas de atención al paciente, turnos y caja. Sin formación contable/administrativa formal ni conocimientos de inglés.",
                 "puntos_fuertes": [
-                    "Atención al público y gestión de turnos[cite: 11]",
-                    "Manejo básico de caja y recepción de insumos[cite: 11]"
+                    "Atención al público y gestión de turnos",
+                    "Manejo básico de caja y recepción de insumos"
                 ],
                 "requisitos_faltantes": [
-                    "Sin formación en Ciencias Económicas ni secundario comercial[cite: 11]",
-                    "Sin experiencia en compras corporativas, proveedores o cobranzas[cite: 11]",
+                    "Sin formación en Ciencias Económicas ni secundario comercial",
+                    "Sin experiencia en compras corporativas, proveedores o cobranzas",
                     "Sin conocimientos de inglés"
                 ],
                 "archivo": "CV FÁTIMA SÁNCHEZ.pdf"
@@ -365,55 +723,205 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
                 "puntaje_compatibilidad": 25,
                 "cumple_excluyentes": False,
                 "veredicto": "Descartar",
-                "resumen_perfil": "Analista de Soporte IT y Técnico con más de 15 años en Help Desk, hardware y redes informáticas[cite: 18]. Posee usuario de SAP y herramientas ofimáticas[cite: 18], pero su perfil no se ajusta al área administrativa, contable ni de compras[cite: 18].",
+                "resumen_perfil": "Analista de Soporte IT y Técnico con más de 15 años en Help Desk, hardware y redes. No se ajusta al área administrativa, contable ni de compras.",
                 "puntos_fuertes": [
-                    "Amplio dominio técnico de sistemas, soporte y seguridad de datos[cite: 18]",
-                    "Uso básico de SAP y paquete Office[cite: 18]",
-                    "Capacidad de resolución de incidencias bajo presión[cite: 18]"
+                    "Amplio dominio técnico de sistemas, soporte y seguridad de datos",
+                    "Uso básico de SAP y paquete Office",
+                    "Capacidad de resolución de incidencias bajo presión"
                 ],
                 "requisitos_faltantes": [
-                    "Formación técnica/periodística, sin antecedentes en Ciencias Económicas[cite: 18]",
-                    "Sin experiencia en compras a proveedores, cobranzas o facturación contable[cite: 18]",
-                    "Nivel de inglés básico[cite: 18]"
+                    "Formación técnica/periodística, sin antecedentes en Ciencias Económicas",
+                    "Sin experiencia en compras a proveedores, cobranzas o facturación contable",
+                    "Nivel de inglés básico"
                 ],
                 "archivo": "CV_Matias_Adragna_Soporte_IT_Tecnico_Administrativo.pdf"
+            },
+            {
+                "nombre_candidato": "Lucía Pereyra",
+                "puntaje_compatibilidad": 22,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Desarrolladora de software frontend especializada en React, TypeScript y Next.js. Perfil orientado exclusivamente a programación web y diseño interactivo.",
+                "puntos_fuertes": [
+                    "Lógica algorítmica y dominio informático avanzado",
+                    "Inglés técnico profesional B2",
+                    "Tecnicatura Universitaria en Programación (UNSAM)"
+                ],
+                "requisitos_faltantes": ["Sin formación administrativa, económica ni comercial."],
+                "archivo": "cv_06_frontend_developer.pdf"
             },
             {
                 "nombre_candidato": "Lucía Fernández",
                 "puntaje_compatibilidad": 20,
                 "cumple_excluyentes": False,
                 "veredicto": "Descartar",
-                "resumen_perfil": "Diseñadora gráfica enfocada en identidad de marca y redes sociales. No cuenta con antecedentes en gestión administrativa ni el nivel de inglés requerido para la posición.",
+                "resumen_perfil": "Diseñadora gráfica enfocada en identidad de marca y redes sociales. No cuenta con antecedentes en gestión administrativa ni el nivel de inglés requerido.",
                 "puntos_fuertes": ["Manejo de herramientas de diseño visual y comunicación corporativa"],
                 "requisitos_faltantes": ["No cumple los requisitos formativos, operativos ni lingüísticos solicitados."],
                 "archivo": "CV_Lucia_Fernandez_Diseno.pdf"
+            },
+            {
+                "nombre_candidato": "Nicolás Domínguez",
+                "puntaje_compatibilidad": 20,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Diseñador de producto digital (UX/UI) y Design Systems en Figma. Trayectoria en investigación de usuarios y diseño de interfaces web/mobile.",
+                "puntos_fuertes": [
+                    "Título universitario en Diseño (FADU - UBA)",
+                    "Nivel de inglés profesional C1",
+                    "Capacidad de resolución de problemas orientada al usuario"
+                ],
+                "requisitos_faltantes": ["Perfil tecnológico y de diseño visual; sin antecedentes administrativos ni contables."],
+                "archivo": "cv_07_ux_ui_designer.pdf"
+            },
+            {
+                "nombre_candidato": "Carlos Alberto Benítez",
+                "puntaje_compatibilidad": 18,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Operario calificado de depósito con carnet habilitante de autoelevadores (Res. SRT 960/15) y picking por radiofrecuencia. Experiencia 100% logística de planta.",
+                "puntos_fuertes": [
+                    "Manejo seguro de autoelevadores con certificación oficial Res. SRT 960/15",
+                    "Experiencia en recepción, control de remitos de carga y estiba en altura",
+                    "Disponibilidad horaria total y licencias de conducir al día"
+                ],
+                "requisitos_faltantes": [
+                    "Sin formación administrativa ni estudios contables",
+                    "Sin experiencia en compras de oficina, conciliaciones o facturación",
+                    "Sin manejo de idioma inglés"
+                ],
+                "archivo": "CV_Carlos_Benitez_Operario.pdf"
+            },
+            {
+                "nombre_candidato": "Tomás Benítez",
+                "puntaje_compatibilidad": 18,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Diseñador Gráfico egresado de la UBA especializado en branding, identidad visual, preprensa y diseño editorial en Adobe Illustrator y Photoshop.",
+                "puntos_fuertes": [
+                    "Graduado de honor de la Universidad de Buenos Aires",
+                    "Criterio estético y dominio avanzado de software de diseño",
+                    "Inglés profesional B2"
+                ],
+                "requisitos_faltantes": ["Sin afinidad con funciones de administración, contabilidad o compras de oficina."],
+                "archivo": "cv_20_disenador_grafico.pdf"
+            },
+            {
+                "nombre_candidato": "Joaquín Vega",
+                "puntaje_compatibilidad": 18,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Ingeniero en Informática (UBA) con especialización en QA Automation, desarrollo de scripts de prueba en Playwright/TypeScript e integración continua.",
+                "puntos_fuertes": [
+                    "Ingeniero en Informática egresado de la FIUBA",
+                    "Inglés profesional avanzado C1",
+                    "Capacidad analítica estructurada para pruebas de software"
+                ],
+                "requisitos_faltantes": ["Perfil puramente técnico de ingeniería de software; no aplica para tareas administrativas."],
+                "archivo": "cv_11_qa_automation.pdf"
+            },
+            {
+                "nombre_candidato": "Damián Godoy",
+                "puntaje_compatibilidad": 16,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Administrador de Sistemas (SysAdmin) Linux y Redes corporativas. Experiencia en virtualización VMware/Proxmox, servidores y monitoreo con Zabbix.",
+                "puntos_fuertes": [
+                    "Sólido conocimiento en administración de servidores, seguridad e infraestructura",
+                    "Certificación Red Hat (RHCSA) y Cisco CCNA",
+                    "Inglés técnico avanzado B2"
+                ],
+                "requisitos_faltantes": ["Perfil exclusivamente de infraestructura IT; sin relación con áreas contables ni de compras."],
+                "archivo": "cv_29_sysadmin_linux.pdf"
             },
             {
                 "nombre_candidato": "Jeremías Fermín Jerez",
                 "puntaje_compatibilidad": 15,
                 "cumple_excluyentes": False,
                 "veredicto": "Descartar",
-                "resumen_perfil": "Técnico electrónico y estudiante de Ingeniería Industrial[cite: 6]. Experiencia orientada a tornería, metrología, depósito de repuestos y construcción, sin antecedentes administrativos ni contables[cite: 6].",
-                "puntos_fuertes": ["Conocimientos técnicos de precisión, metrología y organización de depósito[cite: 6]"],
+                "resumen_perfil": "Técnico electrónico y estudiante de Ingeniería Industrial. Experiencia orientada a tornería, metrología, depósito de repuestos y construcción.",
+                "puntos_fuertes": ["Conocimientos técnicos de precisión, metrología y organización de depósito"],
                 "requisitos_faltantes": [
-                    "Sin formación en Ciencias Económicas ni administración contable[cite: 6]",
-                    "Sin experiencia en gestión de cobranzas, compras o facturación[cite: 6]",
+                    "Sin formación en Ciencias Económicas ni administración contable",
+                    "Sin experiencia en gestión de cobranzas, compras o facturación",
                     "Sin nivel de inglés requerido"
                 ],
                 "archivo": "CV - JEREMIAS JEREZ 2.pdf"
+            },
+            {
+                "nombre_candidato": "Ignacio Castillo",
+                "puntaje_compatibilidad": 15,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Senior Data Engineer y Licenciado en Computación (UBA). Especialista en Big Data, Apache Spark, Airflow y arquitecturas Data Lakehouse en AWS.",
+                "puntos_fuertes": [
+                    "Formación científica de grado en Ciencias de la Computación (UBA)",
+                    "Inglés bilingüe profesional C1",
+                    "Dominio de bases de datos masivas y programación avanzada"
+                ],
+                "requisitos_faltantes": ["Perfil sénior de ingeniería de datos en la nube sin relación con secretariado o administración."],
+                "archivo": "cv_17_data_engineer.pdf"
+            },
+            {
+                "nombre_candidato": "Lucas Santillán",
+                "puntaje_compatibilidad": 14,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Desarrollador de aplicaciones móviles en Flutter y React Native para iOS y Android. Especialista en arquitecturas limpias y APIs bancarias.",
+                "puntos_fuertes": [
+                    "Desarrollo de software y lógica de programación",
+                    "Inglés intermedio B2+",
+                    "Tecnicatura en Desarrollo de Software"
+                ],
+                "requisitos_faltantes": ["Sin antecedentes ni competencias en gestión administrativa, compras o finanzas."],
+                "archivo": "cv_25_mobile_developer.pdf"
+            },
+            {
+                "nombre_candidato": "Lic. Paula Medina",
+                "puntaje_compatibilidad": 12,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Licenciada en Enfermería con Diploma de Honor (UBA) especializada en Cuidados Críticos (UTI), soporte vital avanzado y coordinación asistencial.",
+                "puntos_fuertes": [
+                    "Grado universitario con Diploma de Honor de la UBA",
+                    "Liderazgo de equipos y gestión de historias clínicas hospitalarias",
+                    "Trabajo bajo estricta presión y protocolos de bioseguridad"
+                ],
+                "requisitos_faltantes": [
+                    "Profesional de la salud clínica; sin formación económica o administrativa de empresas",
+                    "Sin experiencia en compras comerciales, cobranzas ni facturación contable"
+                ],
+                "archivo": "cv_14_enfermeria_salud.pdf"
             },
             {
                 "nombre_candidato": "Fernando Ariel Gill Alfonso",
                 "puntaje_compatibilidad": 10,
                 "cumple_excluyentes": False,
                 "veredicto": "Descartar",
-                "resumen_perfil": "Técnico electromecánico con experiencia especializada en matricería, ajuste de moldes y mantenimiento industrial en líneas de producción[cite: 12]. No presenta afinidad con roles de oficina[cite: 12].",
-                "puntos_fuertes": ["Sólido dominio de ajuste mecánico de precisión y control dimensional[cite: 12]"],
+                "resumen_perfil": "Técnico electromecánico con experiencia en matricería, moldes y mantenimiento de planta. No presenta afinidad con roles de oficina.",
+                "puntos_fuertes": ["Sólido dominio de ajuste mecánico de precisión y control dimensional"],
                 "requisitos_faltantes": [
-                    "Perfil exclusivamente industrial/metalúrgico[cite: 12]",
-                    "Sin competencias ni formación administrativa o contable[cite: 12]"
+                    "Perfil exclusivamente industrial/metalúrgico",
+                    "Sin competencias ni formación administrativa o contable"
                 ],
                 "archivo": "CV Fernando Alfonzo.pdf"
+            },
+            {
+                "nombre_candidato": "Dra. Brenda Peralta",
+                "puntaje_compatibilidad": 10,
+                "cumple_excluyentes": False,
+                "veredicto": "Descartar",
+                "resumen_perfil": "Bioquímica Clínica graduada con honores de la UBA, especialista en análisis clínicos automatizados, hematología, cultivos y normas ISO 15189.",
+                "puntos_fuertes": [
+                    "Título universitario de grado de la UBA con honores y matrícula nacional",
+                    "Rigurosidad analítica y gestión de calidad bajo normas ISO 15189",
+                    "Inglés técnico avanzado B2"
+                ],
+                "requisitos_faltantes": [
+                    "Orientación puramente bioquímica y biomédica",
+                    "Sin experiencia en funciones administrativas, comerciales o contables"
+                ],
+                "archivo": "cv_24_bioquimico_laboratorio.pdf"
             }
         ]
 
@@ -422,12 +930,12 @@ if st.button("🚀 Iniciar Análisis Masivo", type="primary"):
 
         for i, item in enumerate(resultados_precargados):
             progreso.progress((i + 1) / total, text=f"Analizando ({i + 1}/{total}): {item['archivo']}")
-            time.sleep(1.4)  # 1.4s por archivo (~30s total para 21 CVs)
+            time.sleep(0.35)  # 0.35s por archivo (~19s total para los 55 CVs)
 
         progreso.empty()
         resultados = resultados_precargados
 
-    # RAMA 2: PROCESAMIENTO REAL CON API (Cadena de respaldo completa)
+    # RAMA 2: PROCESAMIENTO REAL CON API (Cadena de respaldo secuencial y estable)
     else:
         if not api_key:
             st.error("Por favor ingresá tu API Key en el menú lateral o activá el Modo Presentación.")
